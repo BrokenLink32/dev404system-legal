@@ -24,64 +24,75 @@
 <body>
 <main>
   <h1>Hometown Kart - Bulli: privacy policy</h1>
-  <p class="meta">Last updated: 11 October 2026 · Developer: Hometown Kart ·
+  <p class="meta">Last updated: 16 October 2026 (version 1.3.0: friends, race rooms, invites and notifications) · Developer: Hometown Kart ·
     Contact: <a href="mailto:phillipbaden@gmail.com">phillipbaden@gmail.com</a></p>
 
   <h2>The short version</h2>
   <ul>
     <li>Playing <strong>single player</strong> or <strong>exploring Bulli</strong> needs no account. The game asks for Bulli's weather (see "Live weather") and, when something goes wrong, sends a <strong>crash report</strong> (see "Crash and error reports"; you can switch them off).</li>
-    <li>Playing <strong>online</strong>, you sign in as a <strong>guest</strong> (no details asked) or with an <strong>email and password</strong> (or, where the game offers it, a Google or Apple account). The game keeps your <strong>racer name</strong>, your <strong>kart's look</strong> and your <strong>race times</strong>, so other players can race you and see the leaderboard.</li>
-    <li>Accounts and results are held by <strong>Supabase</strong>, the account and database service the game uses, in its Sydney region.</li>
+    <li>Playing <strong>online</strong>, you sign in with an <strong>email and password</strong>, or a <strong>Google</strong> account where the game offers it (Apple on iPhone and iPad when the game arrives there). New guest accounts are no longer offered; a guest account made with an earlier version keeps working and can add a sign-in. The game keeps your <strong>racer name</strong>, your <strong>kart's look</strong> and your <strong>race times</strong>, so other players can race you and see the leaderboard.</li>
+    <li><strong>Friends:</strong> you can add friends by racer name. Your friends see your racer name, whether you're online, and the name of the race you're in (you can <strong>appear offline</strong>). You can invite friends to your race; invites reach them in the game or, if they allow it, as a <strong>notification</strong> on their phone.</li>
+    <li>Accounts, friends and results are held by <strong>Supabase</strong>, the account and database service the game uses, in its Sydney region. Notifications are delivered by <strong>Google's Firebase Cloud Messaging</strong>.</li>
     <li>No ads, no location, no contacts, and no data sold.</li>
   </ul>
 
   <h2>What is stored on your device</h2>
-  <p>Your settings (graphics, sound, frame rate, controls), your racer name and your kart (driver, body and three colours). If you have signed in for online play, also your sign-in session (a login token and a refresh token, and the email address of an email account) so you stay signed in. Nothing here is sent anywhere unless you play online. While crash reports are on, also the last lines of the game's log and any reports waiting to be sent (ten at most). Signing out removes the session; switching crash reports off removes the reports and the log lines; uninstalling the game removes everything.</p>
+  <p>Your settings (graphics, sound, frame rate, controls, notification choices), your racer name and your kart (driver, body and three colours). If you have signed in for online play, also your sign-in session (a login token and a refresh token, and the email address of an email account) so you stay signed in. A random ID for this installation of the game (made on first launch; not linked to the device's hardware) and, on Android with notifications, the device's notification token. While crash reports are on, also the last lines of the game's log and any reports waiting to be sent (ten at most). Signing out removes the session; switching crash reports off removes the reports and the log lines; uninstalling the game removes everything.</p>
 
   <h2>Live weather</h2>
-  <p>When <strong>Weather</strong> is set to <strong>Live</strong> (the default), the game shows Bulli's real weather. To do that it asks the Norwegian Meteorological Institute's free weather service (api.met.no) for the current forecast <strong>for Bulli</strong>: the request names Bulli's fixed coordinates and the game's name, never your location or anything about you, and it is made when the game starts and every half hour while it runs. Like any internet request it comes from your device's internet address, which the weather service receives under its own privacy terms (met.no). The answer (the weather in Bulli) is kept on your device for a few hours so the game starts with it. Set <strong>Weather</strong> to any other choice in Settings and the game makes no requests at all. Without an internet connection the weather is simply sunny. The time of day comes from your device's own clock; nothing is sent for it.</p>
+  <p>When <strong>Weather</strong> is set to <strong>Live</strong> (the default), the game shows Bulli's real weather. To do that it asks the Norwegian Meteorological Institute's free weather service (api.met.no) for the current forecast <strong>for Bulli</strong>: the request names Bulli's fixed coordinates and the game's name, never your location or anything about you, and it is made when the game starts and every half hour while it runs. Like any internet request it comes from your device's internet address, which the weather service receives under its own privacy terms (met.no). The answer is kept on your device for a few hours. Set <strong>Weather</strong> to any other choice in Settings and the game makes no requests at all.</p>
 
   <h2>Crash and error reports</h2>
-  <p>When the game hits an error or closes unexpectedly, it makes a short report so the problem can be found and fixed, and sends it to the game server the next time it can reach it (no account needed). A report holds: what went wrong (the error message and where in the game's code it happened), the last lines of the game's own log before it, the game's version, your device model, operating system, graphics chip and memory, the graphics setting and how long the game had been running. Before a report is saved, email addresses, account and race IDs, internet addresses and your racer name are taken out of the log lines. A report carries no account ID, so it is not linked to you. Like any connection, it comes from your device's internet address: the server's operational logs note that address (kept 30 days, see below), but it is not saved with the report. Reports are kept for 90 days, then deleted automatically. <strong>Settings › Crash reports</strong> switches them off: then nothing is recorded or sent.</p>
+  <p>When the game hits an error or closes unexpectedly, it makes a short report so the problem can be found and fixed, and sends it to the game server the next time it can reach it (no account needed). A report holds: what went wrong, the last lines of the game's own log before it (email addresses, account and race IDs, internet addresses and your racer name taken out), the game's version, your device model, operating system, graphics chip and memory, the graphics setting and how long the game had been running. A report carries no account ID, so it is not linked to you. Reports are kept for 90 days, then deleted automatically. <strong>Settings › Crash reports</strong> switches them off.</p>
 
   <h2>Analytics</h2>
-  <p>We use the information described in this policy, such as race results and crash reports, to understand how the game is played and to make it better. This is done by Hometown Kart itself, not by advertising companies. If the game starts collecting more for this (for example which features are used), this policy will describe it first.</p>
+  <p>We use the information described in this policy, such as race results, crash reports and how many times each kind of invite link is opened, to understand how the game is played and to make it better. This is done by Hometown Kart itself, not by advertising companies. If the game starts collecting more for this (for example which features are used), this policy will describe it first.</p>
 
   <h2>What the game server receives (online play only)</h2>
-  <p>Only when you choose <strong>Race online</strong> or open the <strong>Leaderboard</strong>:</p>
+  <p>Only when you play online, open the <strong>Leaderboard</strong> or use <strong>Race with friends</strong>:</p>
   <div class="table"><table>
     <tr><th>Data</th><th>Why</th><th>Who can see it</th></tr>
-    <tr><td>Racer name (3-16 letters and numbers; you choose it; offensive names are refused)</td><td>to show you in lobbies, races and the leaderboard</td><td>other players</td></tr>
+    <tr><td>Racer name (3-16 letters and numbers; you choose it; offensive names are refused)</td><td>to show you in races, the leaderboard and friends lists, and so friends can find you</td><td>other players</td></tr>
     <tr><td>Kart look: driver, kart body, three colours</td><td>so other players see your kart</td><td>other players</td></tr>
-    <tr><td>Your account: a random user ID; for an email account your email address and your password (stored only as a one-way hash); for a Google or Apple account the email and name that provider shares</td><td>to sign you in and keep your results with you</td><td>nobody else (the operator can see the email address to answer requests)</td></tr>
+    <tr><td>Your account: a random user ID; for an email account your email address and your password (stored only as a one-way hash); for a Google or Apple account the email and name that provider shares</td><td>to sign you in and keep your results and friends with you</td><td>nobody else (the operator can see the email address to answer requests)</td></tr>
     <tr><td>Race results: finishing positions, race and lap times, wins</td><td>for your results and the leaderboard</td><td>other players (leaderboard)</td></tr>
+    <tr><td>Friends, friend requests and blocked players</td><td>so you can see and invite your friends, and block players</td><td>each friend sees you're friends; nobody sees who you blocked</td></tr>
+    <tr><td>Your status: offline, online, in a race (its name, and the lap)</td><td>so your friends can see you're racing and join</td><td>your friends only; <strong>Appear offline</strong> hides it</td></tr>
+    <tr><td>Race rooms: the race's name (you choose it; offensive names are refused), who can join, its code, who raced in it</td><td>to run the race and offer <strong>Race again</strong> (your last 10 races are kept)</td><td>the players in it, and friends you invite</td></tr>
+    <tr><td>Invites: who invited whom to which race</td><td>to show invites when you open the game (your last 20, while their race is open)</td><td>the inviter and the invited player</td></tr>
+    <tr><td>Friend lists (e.g. "Family"): their names and members</td><td>so you can invite a whole list at once</td><td>only you</td></tr>
+    <tr><td>Reports of a racer or race name</td><td>to remove offensive names</td><td>the operator only</td></tr>
+    <tr><td>Notifications (Android): the installation's random ID, its notification token from Google, the platform, the language and time-zone setting of the device, the game's version, whether notifications are allowed, and your choices (race invites, friend requests, news and events)</td><td>to send you invites and friend requests when the game is closed, and news only if you turned it on</td><td>the operator only</td></tr>
     <tr><td>Your IP address and port</td><td>needed to connect you to the game server, a race and the account service; written in the server's operational logs</td><td>the operator only</td></tr>
   </table></div>
-  <p>Signing in, the game talks directly to Supabase over an encrypted connection (HTTPS); the game server checks your sign-in with Supabase and stores your racer name and results there. A guest account has no email: if you lose the device or sign out, its results cannot be recovered unless you first add an email to it.</p>
-  <p>Server logs (including the addresses) are kept for 30 days, then deleted automatically. Your account, racer name and race results stay until you ask for them to be removed. The connection to the game server is encrypted (TLS), and the game checks it is talking to the real Hometown Kart server before it sends your sign-in.</p>
+  <p>Signing in, the game talks directly to Supabase over an encrypted connection (HTTPS); the game server checks your sign-in with Supabase and stores your racer name, results and friends there. If you forget your password, the game asks Supabase to email you a link to a page on <a href="https://hometownkart.bitscience.ai/">hometownkart.bitscience.ai</a> where you choose a new one; the page sends the new password straight to Supabase.</p>
+  <p><strong>Notifications.</strong> Race invites, friend requests and news are sent through Google's Firebase Cloud Messaging, which receives the notification token and the notification's text (for example "Phil invites you to race"). News and events are <strong>off</strong> until you turn them on in <strong>Settings</strong>; even then you get at most one every two days and three a week, never at night by your phone's clock. A notification you open is counted (which kind of link, which channel, which campaign; not who). Signing out stops this device getting your account's invites and requests.</p>
+  <p><strong>Sharing and links.</strong> <strong>Invite on WhatsApp</strong>, <strong>Share</strong> and <strong>Copy the invite link</strong> open WhatsApp, your phone's share sheet or the clipboard with a message for you to send: the game never reads your contacts and sends nothing by itself. The link holds the race's code (or your friend link's code) and which way it was shared. When a link opens the game, the game counts its kind and the way it was shared, not who opened it. On Android, if someone installs the game from your link, Google Play passes the link's code to the game once (the install referrer) so it can take them straight to your race.</p>
+  <p>Server logs (including the addresses) are kept for 30 days, then deleted automatically. Your account, racer name, race results and friends stay until you ask for them to be removed. The connection to the game server is encrypted (TLS), and the game checks it is talking to the real Hometown Kart server before it sends your sign-in.</p>
 
   <h2>What the game does not do</h2>
   <ul>
-    <li>No advertising and no data sold. Data is shared only with the services that run the game for us (Supabase for accounts and results, AWS for the game server).</li>
+    <li>No advertising and no data sold. Data is shared only with the services that run the game for us (Supabase for accounts, results and friends; AWS for the game server; Google Firebase Cloud Messaging to deliver notifications).</li>
     <li>No location, camera, microphone, contacts or photos.</li>
-    <li>No in-game chat or messages between players.</li>
-    <li>The game engine (Unity) is set not to send its own usage statistics, and no Unity services are used: the crash reports above go to the game's own server.</li>
+    <li>No in-game chat or messages between players: invites name the race and who sent them, nothing else.</li>
+    <li>The game engine (Unity) is set not to send its own usage statistics, and no Unity services are used.</li>
   </ul>
 
   <h2>Children</h2>
-  <p>The game is suitable for all ages. It does not knowingly collect personal information from children: online play works as a guest with no details asked, the racer name is filtered for offensive words, and there is no chat. An email account is optional.</p>
+  <p>The game is suitable for all ages. It does not knowingly collect personal information from children. Online play needs a sign-in; racer names and race names are filtered for offensive words, and there is no chat. Friends are added only when both players agree, any player can be blocked, and <strong>Friend requests: Nobody</strong> in Settings stops new requests.</p>
 
   <h2>Your choices</h2>
   <ul>
     <li>You can play everything except online races without an account.</li>
     <li>Switch off crash reports: <strong>Settings › Crash reports</strong>.</li>
-    <li>Play online as a guest if you prefer not to give an email address.</li>
-    <li>To delete your account in the game: <strong>Settings › Delete account</strong>, pressed twice. It deletes your account, racer name, race results and leaderboard places straight away, and signs the game out.</li>
+    <li>Hide your status from friends: <strong>Settings › Friends &amp; notifications › Appear offline</strong>. Stop friend requests: <strong>Friend requests › Nobody</strong> on the same page. Block a player from their page in Friends or a race; unblock in <strong>Settings › Friends &amp; notifications › Blocked players</strong>.</li>
+    <li>Choose which notifications you get: <strong>Settings › Friends &amp; notifications</strong> (Race invite alerts, Friend request alerts, News &amp; events), or turn the game's notifications off in your phone's settings.</li>
+    <li>To delete your account in the game: <strong>Settings › Delete account</strong>, pressed twice. It deletes your account, racer name, race results, leaderboard places, friends, lists, invites, race history and this account's notification devices straight away, and signs the game out.</li>
     <li>Or email <a href="mailto:phillipbaden@gmail.com">phillipbaden@gmail.com</a> with your racer name (and the email address of your account, if it has one); we will delete them within 30 days.</li>
   </ul>
 
   <h2>Where the data is kept</h2>
-  <p>Accounts, racer names and results: with Supabase (supabase.com), in its Sydney, Australia region. The game server that runs the races and keeps the crash reports, operated by Hometown Kart: Amazon Web Services (AWS) in Sydney, Australia. If more servers are added in other regions, the game will let you choose one, and this policy will list them.</p>
+  <p>Accounts, racer names, results and friends: with Supabase (supabase.com), in its Sydney, Australia region. The game server that runs the races and keeps the crash reports, operated by Hometown Kart: Amazon Web Services (AWS) in Sydney, Australia. Notifications are delivered by Google Firebase Cloud Messaging (firebase.google.com). If more servers are added in other regions, the game will let you choose one, and this policy will list them.</p>
 
   <h2>Changes</h2>
   <p>If this policy changes, the new version will be posted at this address with a new date.</p>
