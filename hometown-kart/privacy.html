@@ -24,7 +24,7 @@
 <body>
 <main>
   <h1>Hometown Kart - Bulli: privacy policy</h1>
-  <p class="meta">Last updated: 16 October 2026 (version 1.3.0: friends, race rooms, invites and notifications) · Developer: Hometown Kart ·
+  <p class="meta">Last updated: 26 October 2026 (version 1.3.2: counting the installs our ads bring, on Android) · Developer: Hometown Kart ·
     Contact: <a href="mailto:phillipbaden@gmail.com">phillipbaden@gmail.com</a></p>
 
   <h2>The short version</h2>
@@ -33,11 +33,12 @@
     <li>Playing <strong>online</strong>, you sign in with an <strong>email and password</strong>, or a <strong>Google</strong> account where the game offers it (Apple on iPhone and iPad when the game arrives there). New guest accounts are no longer offered; a guest account made with an earlier version keeps working and can add a sign-in. The game keeps your <strong>racer name</strong>, your <strong>kart's look</strong> and your <strong>race times</strong>, so other players can race you and see the leaderboard.</li>
     <li><strong>Friends:</strong> you can add friends by racer name. Your friends see your racer name, whether you're online, and the name of the race you're in (you can <strong>appear offline</strong>). You can invite friends to your race; invites reach them in the game or, if they allow it, as a <strong>notification</strong> on their phone.</li>
     <li>Accounts, friends and results are held by <strong>Supabase</strong>, the account and database service the game uses, in its Sydney region. Notifications are delivered by <strong>Google's Firebase Cloud Messaging</strong>.</li>
-    <li>No ads, no location, no contacts, and no data sold.</li>
+    <li>From version 1.3.2 on <strong>Android</strong>, the game tells <strong>Meta</strong> (the company behind Facebook and Instagram) when it is installed and opened, so we can see which of our Facebook and Instagram ads bring new players. See "Measuring our ads (Android)".</li>
+    <li>No ads in the game, no location, no contacts, and no data sold.</li>
   </ul>
 
   <h2>What is stored on your device</h2>
-  <p>Your settings (graphics, sound, frame rate, controls, notification choices), your racer name and your kart (driver, body and three colours). If you have signed in for online play, also your sign-in session (a login token and a refresh token, and the email address of an email account) so you stay signed in. A random ID for this installation of the game (made on first launch; not linked to the device's hardware) and, on Android with notifications, the device's notification token. While crash reports are on, also the last lines of the game's log and any reports waiting to be sent (ten at most). Signing out removes the session; switching crash reports off removes the reports and the log lines; uninstalling the game removes everything.</p>
+  <p>Your settings (graphics, sound, frame rate, controls, notification choices), your racer name and your kart (driver, body and three colours). If you have signed in for online play, also your sign-in session (a login token and a refresh token, and the email address of an email account) so you stay signed in. A random ID for this installation of the game (made on first launch; not linked to the device's hardware) and, on Android with notifications, the device's notification token. While crash reports are on, also the last lines of the game's log and any reports waiting to be sent (ten at most). On Android (from version 1.3.2), Meta's measurement software (see below) keeps its own random ID for this installation and when the game was last opened. Signing out removes the session; switching crash reports off removes the reports and the log lines; uninstalling the game removes everything.</p>
 
   <h2>Live weather</h2>
   <p>When <strong>Weather</strong> is set to <strong>Live</strong> (the default), the game shows Bulli's real weather. To do that it asks the Norwegian Meteorological Institute's free weather service (api.met.no) for the current forecast <strong>for Bulli</strong>: the request names Bulli's fixed coordinates and the game's name, never your location or anything about you, and it is made when the game starts and every half hour while it runs. Like any internet request it comes from your device's internet address, which the weather service receives under its own privacy terms (met.no). The answer is kept on your device for a few hours. Set <strong>Weather</strong> to any other choice in Settings and the game makes no requests at all.</p>
@@ -45,8 +46,17 @@
   <h2>Crash and error reports</h2>
   <p>When the game hits an error or closes unexpectedly, it makes a short report so the problem can be found and fixed, and sends it to the game server the next time it can reach it (no account needed). A report holds: what went wrong, the last lines of the game's own log before it (email addresses, account and race IDs, internet addresses and your racer name taken out), the game's version, your device model, operating system, graphics chip and memory, the graphics setting and how long the game had been running. A report carries no account ID, so it is not linked to you. Reports are kept for 90 days, then deleted automatically. <strong>Settings › Crash reports</strong> switches them off.</p>
 
+  <h2>Measuring our ads (Android)</h2>
+  <p>We advertise Hometown Kart on Facebook and Instagram. To see which ads lead to people installing the game, the Android version (from 1.3.2) includes Meta's software development kit (the "Meta SDK", only its core part for counting app events: no Facebook login, no sharing, no ads). Each time the game starts, the Meta SDK sends Meta:</p>
+  <ul>
+    <li>that the game was installed (the first time) or opened, and how long you played (start and end of the session);</li>
+    <li>the game's ID at Meta, and the Google Play install referrer (which says, for an install that came from one of our ads, which ad it was);</li>
+    <li>your device's <strong>advertising ID</strong> (unless you have deleted it in Android's settings), a random ID for this installation, information about the device such as its model, Android version, language, time zone, screen size and mobile network, and the internet address the request comes from.</li>
+  </ul>
+  <p>It does <strong>not</strong> send your racer name, account, email address, race results, friends, invites or anything you do in a race. Meta uses this to report to us how many installs our ads brought, and uses and keeps it under its own terms and privacy policy (<a href="https://www.facebook.com/privacy/policy/">facebook.com/privacy/policy</a>), which can include improving its ads. Your choices are under "Your choices". The iPhone, iPad, PC and Xbox versions don't include the Meta SDK.</p>
+
   <h2>Analytics</h2>
-  <p>We use the information described in this policy, such as race results, crash reports and how many times each kind of invite link is opened, to understand how the game is played and to make it better. This is done by Hometown Kart itself, not by advertising companies. If the game starts collecting more for this (for example which features are used), this policy will describe it first.</p>
+  <p>We use the information described in this policy, such as race results, crash reports and how many times each kind of invite link is opened, to understand how the game is played and to make it better. This is done by Hometown Kart itself, except the install and launch counting on Android described in "Measuring our ads", which Meta does for us. If the game starts collecting more for this (for example which features are used), this policy will describe it first.</p>
 
   <h2>What the game server receives (online play only)</h2>
   <p>Only when you play online, open the <strong>Leaderboard</strong> or use <strong>Race with friends</strong>:</p>
@@ -72,14 +82,14 @@
 
   <h2>What the game does not do</h2>
   <ul>
-    <li>No advertising and no data sold. Data is shared only with the services that run the game for us (Supabase for accounts, results and friends; AWS for the game server; Google Firebase Cloud Messaging to deliver notifications).</li>
+    <li>No ads in the game and no data sold. Data is shared with the services that run the game for us (Supabase for accounts, results and friends; AWS for the game server; Google Firebase Cloud Messaging to deliver notifications) and, on Android, with Meta for counting the installs our ads bring (see "Measuring our ads").</li>
     <li>No location, camera, microphone, contacts or photos.</li>
     <li>No in-game chat or messages between players: invites name the race and who sent them, nothing else.</li>
     <li>The game engine (Unity) is set not to send its own usage statistics, and no Unity services are used.</li>
   </ul>
 
   <h2>Children</h2>
-  <p>The game is suitable for all ages. It does not knowingly collect personal information from children. Online play needs a sign-in; racer names and race names are filtered for offensive words, and there is no chat. Friends are added only when both players agree, any player can be blocked, and <strong>Friend requests: Nobody</strong> in Settings stops new requests.</p>
+  <p>The game is suitable for all ages and is listed on Google Play for ages 13 and over; our ads are shown only to adults. It does not knowingly collect personal information from children. Online play needs a sign-in; racer names and race names are filtered for offensive words, and there is no chat. Friends are added only when both players agree, any player can be blocked, and <strong>Friend requests: Nobody</strong> in Settings stops new requests.</p>
 
   <h2>Your choices</h2>
   <ul>
@@ -87,12 +97,13 @@
     <li>Switch off crash reports: <strong>Settings › Crash reports</strong>.</li>
     <li>Hide your status from friends: <strong>Settings › Friends &amp; notifications › Appear offline</strong>. Stop friend requests: <strong>Friend requests › Nobody</strong> on the same page. Block a player from their page in Friends or a race; unblock in <strong>Settings › Friends &amp; notifications › Blocked players</strong>.</li>
     <li>Choose which notifications you get: <strong>Settings › Friends &amp; notifications</strong> (Race invite alerts, Friend request alerts, News &amp; events), or turn the game's notifications off in your phone's settings.</li>
+    <li>Meta's ad measurement on Android: delete your advertising ID in your phone's settings (<strong>Settings › Privacy › Ads › Delete advertising ID</strong> on Android 12 and later; the names vary by phone), and Meta can no longer link the game's events to your other activity. If you use Facebook or Instagram, <strong>Your activity off Meta technologies</strong> in Meta's Accounts Centre lets you see and disconnect what apps send Meta.</li>
     <li>To delete your account in the game: <strong>Settings › Delete account</strong>, pressed twice. It deletes your account, racer name, race results, leaderboard places, friends, lists, invites, race history and this account's notification devices straight away, and signs the game out.</li>
     <li>Or email <a href="mailto:phillipbaden@gmail.com">phillipbaden@gmail.com</a> with your racer name (and the email address of your account, if it has one); we will delete them within 30 days.</li>
   </ul>
 
   <h2>Where the data is kept</h2>
-  <p>Accounts, racer names, results and friends: with Supabase (supabase.com), in its Sydney, Australia region. The game server that runs the races and keeps the crash reports, operated by Hometown Kart: Amazon Web Services (AWS) in Sydney, Australia. Notifications are delivered by Google Firebase Cloud Messaging (firebase.google.com). If more servers are added in other regions, the game will let you choose one, and this policy will list them.</p>
+  <p>Accounts, racer names, results and friends: with Supabase (supabase.com), in its Sydney, Australia region. The game server that runs the races and keeps the crash reports, operated by Hometown Kart: Amazon Web Services (AWS) in Sydney, Australia. Notifications are delivered by Google Firebase Cloud Messaging (firebase.google.com). The Android install and launch counts go to Meta Platforms (meta.com), on its servers, which are mostly outside Australia. If more servers are added in other regions, the game will let you choose one, and this policy will list them.</p>
 
   <h2>Changes</h2>
   <p>If this policy changes, the new version will be posted at this address with a new date.</p>
