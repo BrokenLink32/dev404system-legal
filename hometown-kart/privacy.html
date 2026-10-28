@@ -24,7 +24,7 @@
 <body>
 <main>
   <h1>Hometown Kart - Bulli: privacy policy</h1>
-  <p class="meta">Last updated: 26 October 2026 (version 1.3.2: counting the installs our ads bring, on Android) · Developer: Hometown Kart ·
+  <p class="meta">Last updated: 28 October 2026 (version 1.4.1: gameplay analytics with Flowdar, on Android) · Developer: Hometown Kart ·
     Contact: <a href="mailto:phillipbaden@gmail.com">phillipbaden@gmail.com</a></p>
 
   <h2>The short version</h2>
@@ -34,11 +34,12 @@
     <li><strong>Friends:</strong> you can add friends by racer name. Your friends see your racer name, whether you're online, and the name of the race you're in (you can <strong>appear offline</strong>). You can invite friends to your race; invites reach them in the game or, if they allow it, as a <strong>notification</strong> on their phone.</li>
     <li>Accounts, friends and results are held by <strong>Supabase</strong>, the account and database service the game uses, in its Sydney region. Notifications are delivered by <strong>Google's Firebase Cloud Messaging</strong>.</li>
     <li>From version 1.3.2 on <strong>Android</strong>, the game tells <strong>Meta</strong> (the company behind Facebook and Instagram) when it is installed and opened, so we can see which of our Facebook and Instagram ads bring new players. See "Measuring our ads (Android)".</li>
-    <li>No ads in the game, no location, no contacts, and no data sold.</li>
+    <li>From version 1.4.1 on <strong>Android</strong>, the game sends <strong>gameplay analytics</strong> to <strong>Flowdar</strong>, the analytics service we use: which menus you open and how your races go (your place, times, crashes and where on the track they happened), so we can make the game more fun. Never your racer name, email address, or anything you type. See "Analytics".</li>
+    <li>No ads in the game, no location from your device, no contacts, and no data sold.</li>
   </ul>
 
   <h2>What is stored on your device</h2>
-  <p>Your settings (graphics, sound, frame rate, controls, notification choices), your racer name and your kart (driver, body and three colours). If you have signed in for online play, also your sign-in session (a login token and a refresh token, and the email address of an email account) so you stay signed in. A random ID for this installation of the game (made on first launch; not linked to the device's hardware) and, on Android with notifications, the device's notification token. While crash reports are on, also the last lines of the game's log and any reports waiting to be sent (ten at most). On Android (from version 1.3.2), Meta's measurement software (see below) keeps its own random ID for this installation and when the game was last opened. Signing out removes the session; switching crash reports off removes the reports and the log lines; uninstalling the game removes everything.</p>
+  <p>Your settings (graphics, sound, frame rate, controls, notification choices), your racer name and your kart (driver, body and three colours). If you have signed in for online play, also your sign-in session (a login token and a refresh token, and the email address of an email account) so you stay signed in. A random ID for this installation of the game (made on first launch; not linked to the device's hardware) and, on Android with notifications, the device's notification token. While crash reports are on, also the last lines of the game's log and any reports waiting to be sent (ten at most). On Android (from version 1.3.2), Meta's measurement software (see below) keeps its own random ID for this installation and when the game was last opened; from version 1.4.1, Flowdar's analytics software (see "Analytics") keeps its own random ID for this installation and the analytics events waiting to be sent (at most 1,000, for at most 7 days). Signing out removes the session; switching crash reports off removes the reports and the log lines; uninstalling the game removes everything.</p>
 
   <h2>Live weather</h2>
   <p>When <strong>Weather</strong> is set to <strong>Live</strong> (the default), the game shows Bulli's real weather. To do that it asks the Norwegian Meteorological Institute's free weather service (api.met.no) for the current forecast <strong>for Bulli</strong>: the request names Bulli's fixed coordinates and the game's name, never your location or anything about you, and it is made when the game starts and every half hour while it runs. Like any internet request it comes from your device's internet address, which the weather service receives under its own privacy terms (met.no). The answer is kept on your device for a few hours. Set <strong>Weather</strong> to any other choice in Settings and the game makes no requests at all.</p>
@@ -56,7 +57,16 @@
   <p>It does <strong>not</strong> send your racer name, account, email address, race results, friends, invites or anything you do in a race. Meta uses this to report to us how many installs our ads brought, and uses and keeps it under its own terms and privacy policy (<a href="https://www.facebook.com/privacy/policy/">facebook.com/privacy/policy</a>), which can include improving its ads. Your choices are under "Your choices". The iPhone, iPad, PC and Xbox versions don't include the Meta SDK.</p>
 
   <h2>Analytics</h2>
-  <p>We use the information described in this policy, such as race results, crash reports and how many times each kind of invite link is opened, to understand how the game is played and to make it better. This is done by Hometown Kart itself, except the install and launch counting on Android described in "Measuring our ads", which Meta does for us. If the game starts collecting more for this (for example which features are used), this policy will describe it first.</p>
+  <p>We use the information described in this policy, such as race results, crash reports and how many times each kind of invite link is opened, to understand how the game is played and to make it better.</p>
+  <p>From version 1.4.1, the Android version also sends <strong>gameplay analytics</strong> to <strong>Flowdar</strong> (flowdar.ai), the analytics service we use, which processes them for us. We use them to see what players enjoy and where they get stuck (for example which parts of a track wreck the most karts, or whether new players finish their first race), so we can improve the game, and to see which ads and invite links bring players who keep playing. The game sends Flowdar:</p>
+  <ul>
+    <li><strong>What happens in the game:</strong> the menu pages you open; the track you pick; settings you change (for example sound or steering assist); for each race: when it starts and ends, your place and times, lap times, how you drove (for example drift boosts and items used), what you hit and how often (walls, traffic, other karts, kangaroos, magpies, items), where on the track you crashed or were put back on the track and why, whether you finished, restarted or quit, and the game's frame rate; for online play: Quick race, joining or making a race room and how (for example by an invite or a code), and your online results; when you tap a share button and which app you picked to share with (never who you sent it to or the message); how many in-game invites you sent; that you added a friend (not who); how you signed in (guest, Google, Apple or email); the answer you gave to the notifications question; and problems such as a failed connection.</li>
+    <li><strong>About the game and device:</strong> the game's version, the device's model and Android version, its language and time zone, a random ID for this installation, the session (when you open and leave the game), and the country (and possibly region) Flowdar works out from the internet address the data comes from.</li>
+    <li><strong>Where you came from:</strong> the Google Play install referrer (which link, ad or store page led to the install), Meta's install referrer for an install from one of our Facebook or Instagram ads, and the links that open the game (with the tags we put on our own links, such as which share button they came from).</li>
+    <li><strong>Your advertising ID</strong>, unless you have deleted it or limited ad tracking in Android's settings. Flowdar keeps it apart from the analytics; it is there so we can later tell ad networks which of our ads brought players who kept playing.</li>
+    <li>If you play online, your account's random user ID on the game server, so your analytics follow you to a new phone. Never your racer name or email address.</li>
+  </ul>
+  <p>Analytics are not linked to your racer name or email address, are not sold, and are not used to show you ads in the game (there are none). Tests and the PC, Xbox and iPhone versions send nothing to Flowdar. To ask for your analytics to be deleted, email us (see "Your choices").</p>
 
   <h2>What the game server receives (online play only)</h2>
   <p>Only when you play online, open the <strong>Leaderboard</strong> or use <strong>Race with friends</strong>:</p>
@@ -82,8 +92,8 @@
 
   <h2>What the game does not do</h2>
   <ul>
-    <li>No ads in the game and no data sold. Data is shared with the services that run the game for us (Supabase for accounts, results and friends; AWS for the game server; Google Firebase Cloud Messaging to deliver notifications) and, on Android, with Meta for counting the installs our ads bring (see "Measuring our ads").</li>
-    <li>No location, camera, microphone, contacts or photos.</li>
+    <li>No ads in the game and no data sold. Data is shared with the services that run the game for us (Supabase for accounts, results and friends; AWS for the game server; Google Firebase Cloud Messaging to deliver notifications) and, on Android, with Meta for counting the installs our ads bring (see "Measuring our ads") and with Flowdar, which processes the game's analytics for us (see "Analytics").</li>
+    <li>No location from your device (no GPS or location permission), and no camera, microphone, contacts or photos.</li>
     <li>No in-game chat or messages between players: invites name the race and who sent them, nothing else.</li>
     <li>The game engine (Unity) is set not to send its own usage statistics, and no Unity services are used.</li>
   </ul>
@@ -100,10 +110,11 @@
     <li>Meta's ad measurement on Android: delete your advertising ID in your phone's settings (<strong>Settings › Privacy › Ads › Delete advertising ID</strong> on Android 12 and later; the names vary by phone), and Meta can no longer link the game's events to your other activity. If you use Facebook or Instagram, <strong>Your activity off Meta technologies</strong> in Meta's Accounts Centre lets you see and disconnect what apps send Meta.</li>
     <li>To delete your account in the game: <strong>Settings › Delete account</strong>, pressed twice. It deletes your account, racer name, race results, leaderboard places, friends, lists, invites, race history and this account's notification devices straight away, and signs the game out.</li>
     <li>Or email <a href="mailto:phillipbaden@gmail.com">phillipbaden@gmail.com</a> with your racer name (and the email address of your account, if it has one); we will delete them within 30 days.</li>
+    <li>Analytics on Android: deleting your advertising ID (above) stops it being sent. To have your analytics deleted, email us with your racer name if you play online (or the approximate date you installed the game); we will delete them within 30 days.</li>
   </ul>
 
   <h2>Where the data is kept</h2>
-  <p>Accounts, racer names, results and friends: with Supabase (supabase.com), in its Sydney, Australia region. The game server that runs the races and keeps the crash reports, operated by Hometown Kart: Amazon Web Services (AWS) in Sydney, Australia. Notifications are delivered by Google Firebase Cloud Messaging (firebase.google.com). The Android install and launch counts go to Meta Platforms (meta.com), on its servers, which are mostly outside Australia. If more servers are added in other regions, the game will let you choose one, and this policy will list them.</p>
+  <p>Accounts, racer names, results and friends: with Supabase (supabase.com), in its Sydney, Australia region. The game server that runs the races and keeps the crash reports, operated by Hometown Kart: Amazon Web Services (AWS) in Sydney, Australia. Notifications are delivered by Google Firebase Cloud Messaging (firebase.google.com). The Android install and launch counts go to Meta Platforms (meta.com), on its servers, which are mostly outside Australia. The Android analytics go to Flowdar (flowdar.ai), on its servers. If more servers are added in other regions, the game will let you choose one, and this policy will list them.</p>
 
   <h2>Changes</h2>
   <p>If this policy changes, the new version will be posted at this address with a new date.</p>
